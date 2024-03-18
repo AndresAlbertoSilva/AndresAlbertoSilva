@@ -1,0 +1,586 @@
+body {
+   position: relative;
+   width: 1440px;
+   height: 1024px;
+   background: #F3F5FC;
+}
+
+.Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.ingresartexto{
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+    resize: none;
+    background: none;
+}
+
+.ingresartexto::placeholder{
+    color: rgba(10, 56, 113, 1);
+}
+
+.ingresartexto:active, .ingresartexto:focus{
+    outline: none;
+    animation-duration: 0ms;
+}
+
+.mensajeinferior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+.imagenmensajeinferior{
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.textomensajeinferior{
+   width: 205px;
+   height: 18px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 150%;
+   color: #495057;
+   opacity: 0.8;
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+}
+
+.botonesencriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.encriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.encriptar em{
+    width: 280px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.desencriptar em{
+    width: 280px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#rectangulo{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.Personaje{
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 1032px;
+    position: fixed;
+}
+
+.mensajederecha{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: fixed;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+}
+
+.textouno{
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.textodos{
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/*CSS para Escritorio 2*/
+
+.ingresartextodos{
+    width: 680px;
+    height: 288px;
+    position: absolute;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+    resize: none;
+    background: none;
+}
+
+#rectangulodos{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.eliminarpersonaje{
+    display: none;
+}
+
+.eliminarmensajederecha{
+    display: none;
+}
+
+#cuadroTexto{
+    position: fixed;
+    width: 336px;
+    height: 781px;
+    left: 1032px;
+    top: 72px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    border: none;
+    resize: none;
+}
+
+#cuadroTexto:focus{
+    outline: none;
+}
+
+.copiar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: fixed;
+    width: 336px;
+    height: 67px;
+    left: 1032px;
+    top: 885px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.copiar em{
+    width: 288px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+/*CSS para Tablet 1*/
+
+@media screen and (max-width: 768px){
+    body{
+        width: 768px;
+        height: 1174px;
+    }
+
+    .Logo{
+        width: 31.09px;
+        height: 50.58px;
+        top: 73.42px;
+    }
+
+    .ingresartexto{
+        width: 688px;
+        left: 40px;
+        top: 240px;
+    }
+
+    .mensajeinferior{
+        left: 40px;
+        top: 836px;
+    }
+
+    .botonesencriptar{
+        width: 688px;
+        top: 870px;
+        left: 40px;
+    }
+    
+    .encriptar{
+        width: 332px;
+        flex-grow: 1;
+    }
+    
+    .encriptar em{
+        width: 284px;
+        line-height: 19.36px;
+    }
+    
+    .desencriptar{
+        width: 332px;
+        flex-grow: 1;
+    }
+    
+    .desencriptar em{
+        width: 284px;
+        line-height: 19.36px;
+    }
+
+    #rectangulo{
+        width: 688px;
+        height: 133px;
+        top: 1001px;
+        left: 40px;
+        gap: 32px;
+        padding: 32px;
+        box-sizing: border-box;
+    }
+
+    .Personaje{
+        display: none;
+    }
+
+    .mensajederecha{
+        width: 624px;
+        height: 69px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        position: initial;
+    }
+    
+    .textouno{
+        width: 624px;
+        height: 29px;
+    }
+    
+    .textodos{
+        width: 624px;
+        height: 24px;
+    }
+
+/*CSS para Tablet 2*/
+
+    .bodydos{
+        height: 1384px;
+    }
+
+    .ingresartextodos{
+        width: 688px;
+        left: 40px;
+        top: 240px;
+    }
+
+    #rectangulodos{
+        width: 688px;
+        height: 343px;
+        top: 1001px;
+        left: 40px;
+        padding: 32px;
+        box-sizing: border-box;
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mensajederechados{
+        display: none;
+    }
+    
+    #cuadroTexto{
+        width: 624px;
+        height: 180px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        position: initial;
+    }
+    
+    #cuadroTexto:focus{
+        outline: none;
+    }
+    
+    .copiar{
+        width: 624px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        position: initial;
+    }
+    
+    .copiar em{
+        width: 576px;
+        height: 19px;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #0A3871;
+    }
+
+}
+
+/*CSS para celular 1*/
+
+@media screen and (max-width: 376px){
+    body{
+        width: 375px;
+        height: 933px;
+    }
+
+    .Logo{
+        width: 32px;
+        top: 24px;
+        left: 16px;
+    }
+
+    .ingresartexto{
+        width: 343px;
+        left: 16px;
+        top: 152px;
+    }
+
+    .mensajeinferior{
+        left: 16px;
+        top: 451px;
+    }
+
+    .botonesencriptar{
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
+        flex-direction: column;
+    }
+    
+    .encriptar{
+        width: 343px;
+        align-self: stretch;
+    }
+    
+    .encriptar em{
+        width: 295px;
+        line-height: 19.36px;
+    }
+    
+    .desencriptar{
+        width: 343px;
+        align-self: stretch;
+    }
+    
+    .desencriptar em{
+        width: 295px;
+        line-height: 19.36px;
+    }
+
+    #rectangulo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        width: 327px;
+        height: 186px;
+        left: 24px;
+        top: 707px;
+    }
+
+    .Personaje{
+        display: none;
+    }
+
+    .mensajederecha{
+        width: 263px;
+        height: 122px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+    .textouno{
+        width: 263px;
+        height: 58px;
+    }
+    
+    .textodos{
+        width: 263px;
+        height: 48px;
+    }
+
+/*CSS para celular 2*/
+
+    .bodydos{
+        height: 1315px;
+    }
+
+    .mensajederechados{
+        display: none;
+    }
+
+    #rectangulodos{
+        align-items: flex-start;
+        width: 343px;
+        height: 595px;
+        left: 16px;
+        top: 696px;
+    }
+
+    #cuadroTexto{
+        width: 279px;
+        height: 432px;
+    }
+    
+    #cuadroTexto:focus{
+        outline: none;
+    }
+    
+    .copiar{
+        width: 279px;
+
+    }
+    
+    .copiar em{
+        width: 231px;
+        line-height: 19.36px;
+        letter-spacing: 0em;
+    }
+
+}

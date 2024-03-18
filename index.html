@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Oracle - Alura</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> <!-- llama el estilo font Inter -->
+</head>
+    
+<body>
+    <main>
+        <img class="Logo" src="Imagenes/Logo.png" alt="Logo Alura">
+        <textarea class="ingresartexto" id="text" onclick="cambioescritorio()" placeholder="Ingrese el texto aqui"></textarea>
+
+        <div class="mensajeinferior">
+            <img class="imagenmensajeinferior" src="Imagenes/bi_exclamation-circle-fill.png" alt="signo">
+            <em class="textomensajeinferior">Solo letras minúsculas y sin acentos</em>
+        </div>
+
+        <div class="botonesencriptar">
+            <button class="encriptar" onclick="encriptar()"><em>Encriptar</em></button>
+            <button class="desencriptar" onclick="desencriptar()"><em>Desencriptar</em></button>
+        </div>
+        <section id="rectangulo">
+            <img class="Personaje" src="Imagenes/Muñeco.png" alt="Personaje">
+            <div class="mensajederecha">
+                <p class="textouno">Ningún mensaje fue encontrado</p>
+                <p class="textodos">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+
+        <script src="app.js"></script>
+    </main>
+
+</body>
+</html>
